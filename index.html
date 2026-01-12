@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favico.png" type="image/png" />
+    <title>Kyodai</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- Back to Top Button -->
+  <button
+    id="backToTop"
+    class="h-9 w-9 fixed bottom-6 right-3 z-50 bg-[#BE1E2E] transition-all duration-300 lg:hidden hover:scale-105"
+  >
+    <i class="fa-solid fa-arrow-up text-white text-md"></i>
+  </button>
+  <!-- body -->
+  <body class="bg-white">
+    <!-- TOP STRIP -->
+    <div
+      class="w-full bg-[#F8F8F8] border-b border-[#e9e9e9] text-[13px] text-gray-700"
+    >
+      <div class="max-w-7xl mx-auto px-6 md:px-0">
+        <div
+          class="flex flex-col gap-2 py-2 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <!-- left info -->
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span class="inline-flex items-center gap-2">
+              <i class="fa-regular fa-calendar text-[#c62828]"></i>
+              <span>February 28, 2025</span>
+            </span>
+
+            <span class="inline-flex items-center gap-2">
+              <i class="fa-regular fa-clock text-[#c62828]"></i>
+              <span>Last Update February 28, 2025 4:08 pm</span>
+            </span>
+
+            <span class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-[#c62828]"></i>
+              <span>Japan</span>
+            </span>
+          </div>
+
+          <!-- right socials -->
+          <div class="flex items-center gap-4">
+            <a
+              class="opacity-70 hover:opacity-100 hover:text-[#c62828] transition"
+              href="#"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f text-lg"></i
+            ></a>
+
+            <a
+              class="opacity-70 hover:opacity-100 hover:text-[#c62828] transition"
+              href="#"
+              aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter text-lg"></i
+            ></a>
+
+            <a
+              class="opacity-70 hover:opacity-100 hover:text-[#c62828] transition"
+              href="#"
+              aria-label="YouTube"
+              ><i class="fa-brands fa-youtube text-lg"></i
+            ></a>
+
+            <a
+              class="opacity-70 hover:opacity-100 hover:text-[#c62828] transition"
+              href="#"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram text-lg"></i
+            ></a>
+
+            <a
+              class="opacity-70 hover:opacity-100 hover:text-[#c62828] transition"
+              href="#"
+              aria-label="RSS"
+              ><i class="fa-solid fa-rss text-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAND ROW -->
+    <header id="brandRow" class="w-full bg-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-0 py-6">
+        <div
+          class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <!-- Logo -->
+          <a href="#" class="inline-flex justify-center lg:justify-start">
+            <img
+              src="./assets/Kyodainews.com-9.gif"
+              alt="Kyodai Logo"
+              class="h-24 w-auto block"
+            />
+          </a>
+
+          <div class="flex justify-center lg:justify-end">
+            <img
+              src="./assets/advertisement.gif"
+              alt="Advertisement"
+              class="h-16 sm:h-20 lg:h-24 w-auto max-w-full object-contain block"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR  -->
+    <nav id="mainNav" class="sticky top-0 z-50 bg-[#273890]">
+      <div class="max-w-7xl mx-auto px-6 md:px-0">
+        <div class="flex items-center min-h-[64px]">
+          <!-- mini brand  -->
+          <div class="w-[170px] shrink-0 flex items-center">
+            <a
+              id="miniBrand"
+              href="./index.html"
+              class="opacity-0 -translate-y-1 pointer-events-none transition duration-400 will-change-transform"
+            >
+              <img
+                src="./assets/Kyodainews-logo.png"
+                alt="Kyodai"
+                class="h-16 w-auto block"
+              />
+            </a>
+          </div>
+
+          <!-- desktop nav links-->
+          <ul class="hidden lg:flex items-center gap-1 flex-1">
+            <li>
+              <a class="px-3 py-2" href="./index.html">गृहपृष्ठ</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="./rajniti.html">राजनीति</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="#">अर्थ</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="#">अन्तराष्ट्रिय</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="#">खेलकुद</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="#">नेपाल विशेष</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="#">जापान विशेष</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="#">प्रवास गतिविधि</a>
+            </li>
+            <li>
+              <a class="px-3 py-2" href="#">कला / साहित्य</a>
+            </li>
+          </ul>
+
+          <!-- RIGHT SIDE -->
+          <div class="flex items-center gap-2 ml-auto">
+            <div class="flex items-center gap-2">
+              <button
+                id="searchBtn"
+                type="button"
+                aria-label="Search"
+                class="p-2 text-[18px] text-white hover:text-[#c62828] transition"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+
+              <form
+                id="searchForm"
+                action="#"
+                method="GET"
+                class="w-0 overflow-hidden transition-all duration-200"
+              >
+                <input
+                  id="searchInput"
+                  type="search"
+                  name="q"
+                  placeholder="Search..."
+                  aria-label="Search"
+                  class="h-10 w-[220px] border border-[#e9e9e9] px-3 outline-none focus:border-[#c62828]"
+                />
+              </form>
+            </div>
+
+            <button
+              id="menuBtn"
+              type="button"
+              class="lg:hidden p-2 border border-[#e9e9e9] flex-shrink-0"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+            >
+              <i class="fa-solid fa-bars text-white"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div
+          id="mobileMenu"
+          class="lg:hidden hidden border-t border-[#e9e9e9] py-2"
+        >
+          <a class="block px-2 py-2" href="#">गृहपृष्ठ</a>
+          <a class="block px-2 py-2" href="#">राजनीति</a>
+          <a class="block px-2 py-2" href="#">अर्थ</a>
+          <a class="block px-2 py-2" href="#">अन्तराष्ट्रिय</a>
+          <a class="block px-2 py-2" href="#">खेलकुद</a>
+          <a class="block px-2 py-2" href="#">नेपाल विशेष</a>
+          <a class="block px-2 py-2" href="#">जापान विशेष</a>
+          <a class="block px-2 py-2" href="#">प्रवास गतिविधि</a>
+          <a class="block px-2 py-2" href="#">कला / साहित्य</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- merquee -->
+    <section class="w-full bg-white py-6">
+      <div class="max-w-7xl mx-auto px-6 md:px-0">
+        <div
+          class="border border-[#e9e9e9] flex items-stretch overflow-hidden bg-white"
+        >
+          <!-- Left label -->
+          <div
+            class="shrink-0 bg-[#BE1E2E] text-white font-semibold px-4 flex items-center"
+          >
+            <span class="text-[16px] leading-none whitespace-nowrap">
+              ताजा खबर</span
+            >
+          </div>
+
+          <!-- Marquee track -->
+          <div class="relative flex-1 overflow-hidden">
+            <!-- fade edges -->
+            <div
+              class="pointer-events-none absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-white to-transparent z-10"
+            ></div>
+            <div
+              class="pointer-events-none absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-white to-transparent z-10"
+            ></div>
+
+            <div class="marquee">
+              <div class="marquee__inner">
+                <!-- Set A -->
+                <div class="marquee__group">
+                  <a href="#" class="marquee__item">
+                    <span class="marquee__icon">
+                      <img src="./assets/merquee-logo.png" alt="" />
+                    </span>
+                    जापानको इवाते प्रान्तको २१ सय हेक्टर क्षेत्रमा डढेलो, आगो
+                    नियन्त्रणभन्दा बाहिर
+                  </a>
+
+                  <span class="marquee__sep" aria-hidden="true"></span>
+
+                  <a href="#" class="marquee__item">
+                    <span class="marquee__icon">
+                      <img src="./assets/merquee-logo.png" alt="" />
+                    </span>
+                    बेलायतमा साइबर अपराधविरुद्ध सचेतना अभियान सुरु
+                  </a>
+
+                  <span class="marquee__sep" aria-hidden="true"></span>
+
+                  <a href="#" class="marquee__item">
+                    <span class="marquee__icon">
+                      <img src="./assets/merquee-logo.png" alt="" />
+                    </span>
+                    जापान
+                  </a>
+
+                  <span class="marquee__sep" aria-hidden="true"></span>
+                </div>
+
+                <!-- duplicate -->
+                <div class="marquee__group" aria-hidden="true">
+                  <a href="#" class="marquee__item">
+                    <span class="marquee__icon">
+                      <img src="./assets/merquee-logo.png" alt="" />
+                    </span>
+                    जापानको इवाते प्रान्तको २१ सय हेक्टर क्षेत्रमा डढेलो, आगो
+                    नियन्त्रणभन्दा बाहिर
+                  </a>
+
+                  <span class="marquee__sep" aria-hidden="true"></span>
+
+                  <a href="#" class="marquee__item">
+                    <span class="marquee__icon">
+                      <img src="./assets/merquee-logo.png" alt="" />
+                    </span>
+                    बेलायतमा साइबर अपराधविरुद्ध सचेतना अभियान सुरु
+                  </a>
+
+                  <span class="marquee__sep" aria-hidden="true"></span>
+
+                  <a href="#" class="marquee__item">
+                    <span class="marquee__icon">
+                      <img src="./assets/merquee-logo.png" alt="" />
+                    </span>
+                    जापान
+                  </a>
+
+                  <span class="marquee__sep" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section breaking banner -->
+    <section class="py-8">
+      <div class="max-w-7xl mx-auto px-6 md:px-0">
+        <div class="space-y-12">
+          <!-- breaking card 1 -->
+          <article class="space-y-6 border-b border-[#e9e9e9] pb-12">
+            <div class="px-6 md:px-0">
+              <a href="#">
+                <h1 class="text-center banner-title">
+                  जापानको इवाते प्रान्तको २१ सय हेक्टर क्षेत्रमा डढेलो, आगो
+                  नियन्त्रणभन्दा बाहिर
+                </h1>
+              </a>
+            </div>
+            <!-- meta -->
+            <div class="px-6 md:px-0">
+              <div
+                class="flex items-center justify-center gap-4 text-[#777] text-[14px]"
+              >
+                <span class="inline-flex items-center gap-2">
+                  <img
+                    src="./assets/merquee-logo.png"
+                    alt=""
+                    class="h-10 w-10 rounded-full border border-dashed border-[#c62828] object-cover p-1"
+                  />
+                  <span class="author">kyodainews</span>
+                </span>
+
+                <span class="inline-flex items-center gap-2">
+                  <i class="fa-regular fa-clock text-[#9ca3af]"></i>
+                  <span class="time">1 hour ago</span>
+                </span>
+              </div>
+            </div>
+            <a href="#" class="block">
+              <img
+                src="./assets/hero-img.jpg"
+                alt="Breaking"
+                class="w-full h-[260px] md:h-[600px] object-cover"
+              />
+            </a>
+          </article>
+          <!-- breaking card 2 -->
+          <article class="space-y-6">
+            <div class="px-6 md:px-0">
+              <a href="#">
+                <h1 class="text-center banner-title">
+                  जापानको इवाते प्रान्तको २१ सय हेक्टर क्षेत्रमा डढेलो, आगो
+                  नियन्त्रणभन्दा बाहिर
+                </h1>
+              </a>
+            </div>
+            <!-- meta -->
+            <div class="px-6 md:px-0">
+              <div
+                class="flex items-center justify-center gap-4 text-[#777] text-[14px]"
+              >
+                <span class="inline-flex items-center gap-2">
+                  <img
+                    src="./assets/merquee-logo.png"
+                    alt=""
+                    class="h-10 w-10 rounded-full border border-dashed border-[#c62828] object-cover p-1"
+                  />
+                  <span class="author">kyodainews</span>
+                </span>
+
+                <span class="inline-flex items-center gap-2">
+                  <i class="fa-regular fa-clock text-[#9ca3af]"></i>
+                  <span class="time">1 hour ago</span>
+                </span>
+              </div>
+            </div>
+            <a href="#" class="block">
+              <img
+                src="./assets/banner-2.png"
+                alt="Breaking"
+                class="w-full h-[260px] md:h-[600px] object-cover"
+              />
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- rajniti section -->
+    <section class="py-8">
+      <div class="max-w-7xl mx-auto px-6 md:px-0 space-y-8">
+        <!-- header row -->
+        <div class="section-header">
+          <div class="section-header__left">
+            <span class="section-header__icon">
+              <i class="fa-solid fa-landmark"></i>
+            </span>
+            <h2 class="title">राजनीति</h2>
+          </div>
+
+          <div class="section-header__line"></div>
+
+          <a href="#" class="section-header__more">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </a>
+        </div>
+
+        <!-- content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <!-- LEFT featured  -->
+          <div class="lg:col-span-6">
+            <a href="#" class="group relative block overflow-hidden">
+              <div class="img-big relative overflow-hidden">
+                <img
+                  src="./assets/inter-1.jpg"
+                  alt=""
+                  class="w-full h-full object-cover img-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <h3
+                class="absolute bottom-4 left-4 right-4 news-title-big text-white z-10"
+              >
+                घरायसी अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+              </h3>
+            </a>
+          </div>
+
+          <!-- middle list  -->
+          <div class="lg:col-span-3">
+            <div class="bg-white flex flex-col gap-8">
+              <!--  big item -->
+              <a href="#" class="group relative block overflow-hidden">
+                <div class="img-medium relative overflow-hidden">
+                  <img
+                    src="./assets/artha-3.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+                ></div>
+
+                <h3
+                  class="absolute bottom-4 left-4 right-4 news-title-medium text-white z-10"
+                >
+                  घरायसी अकालमा ज्यान गुमाउँदै महिला र बालबालिका प्रदूषणले
+                </h3>
+              </a>
+
+              <!-- lower list -->
+              <div class="flex flex-col gap-8">
+                <!-- item 1 -->
+                <a href="#" class="group flex items-start gap-4">
+                  <div class="img-smallest shrink-0 overflow-hidden">
+                    <img
+                      src="./assets/rajniti-2.jpg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <h4 class="news-title-smallest">
+                    कांग्रेस विशेष महाधिवेशन : बागमतीको अवस्था के छ ?
+                  </h4>
+                </a>
+
+                <!-- item 2 -->
+                <a href="#" class="group flex items-start gap-4">
+                  <div class="img-smallest shrink-0 overflow-hidden">
+                    <img
+                      src="./assets/rajniti-3.jpg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 class="news-title-smallest">
+                    समाजवादी क्रान्तिबिना कम्युनिस्ट आन्दोलन र राष्ट्रको रक्षा
+                    सम्भव छैन : गजुरेल
+                  </h4>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- right list  -->
+          <div class="lg:col-span-3">
+            <div class="bg-white space-y-8">
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-2.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-2.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-2.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-3.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTHA  -->
+    <section class="py-8">
+      <div class="max-w-7xl mx-auto px-6 md:px-0 space-y-8">
+        <!-- header row -->
+        <div class="section-header">
+          <div class="section-header__left">
+            <span class="section-header__icon">
+              <i class="fa-solid fa-balance-scale"></i>
+            </span>
+            <h2 class="title">अर्थ</h2>
+          </div>
+
+          <div class="section-header__line"></div>
+
+          <a href="#" class="section-header__more" aria-label="View more Artha">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </a>
+        </div>
+
+        <!-- content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <!-- LEFT featured -->
+          <div class="lg:col-span-6">
+            <a href="#" class="group relative block overflow-hidden">
+              <div class="img-big overflow-hidden relative">
+                <img
+                  src="./assets/artha-1.jpg"
+                  alt=""
+                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <h3
+                class="absolute bottom-4 right-4 left-4 news-title-big text-white z-10"
+              >
+                संसदमा आज महत्त्वपूर्ण निर्णय, सरकार–विपक्षबीच तर्कवितर्क
+              </h3>
+            </a>
+          </div>
+
+          <!-- middle list -->
+          <div class="lg:col-span-3">
+            <div class="space-y-4">
+              <a href="#" class="flex flex-col items-stretch gap-2">
+                <img
+                  src="./assets/artha-2.jpg"
+                  alt=""
+                  class="h-auto w-full object-cover shrink-0"
+                />
+                <h4 class="news-title-small">
+                  दलहरूबीच सहमति जुटेन, बैठक स्थगित सहमति जुटेन
+                </h4>
+              </a>
+
+              <a href="#" class="flex flex-col items-stretch gap-2">
+                <img
+                  src="./assets/artha-3.jpg"
+                  alt=""
+                  class="h-auto w-full object-cover shrink-0"
+                />
+                <h4 class="news-title-small">
+                  दलहरूबीच सहमति सहमति जुटेन जुटेन, बैठक स्थगित सहमति जुटेन
+                </h4>
+              </a>
+            </div>
+          </div>
+          <!-- RIGHT list -->
+          <div class="lg:col-span-3">
+            <div class="divide-y divide-[#e9e9e9]">
+              <a href="#" class="block pb-4">
+                <h4 class="news-title-smallest">
+                  एनएमबी बैंकको ३० औं वार्षिक साधारण सभा सम्पन्न
+                </h4>
+              </a>
+
+              <a href="#" class="block py-4">
+                <h4 class="news-title-smallest">
+                  नाडा र नाडा उपाध्यक्ष श्रेष्ठ राष्ट्रिय व्यावसायिक प्रशिक्षण
+                  प्रतिष्ठानबाट सम्मानित
+                </h4>
+              </a>
+
+              <a href="#" class="block py-4">
+                <h4 class="news-title-smallest">
+                  दाङको लमहीमा बन्द भएका छोटी भन्सार सञ्चालन गर्न आग्रह
+                </h4>
+              </a>
+
+              <a href="#" class="block py-4">
+                <h4 class="news-title-smallest">
+                  महालक्ष्मी विकास बैंकका नव नियुक्त अध्यक्ष उपाध्यायद्धारा शपथ
+                  ग्रहण
+                </h4>
+              </a>
+
+              <a href="#" class="block py-4">
+                <h4 class="news-title-smallest">
+                  एकैदिन तोलामा २ हजारले घट्यो सुनको मूल्य
+                </h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  international, प्रवास गतिविधि   sticky latest -->
+    <section class="py-8">
+      <div class="max-w-7xl mx-auto px-6 md:px-0">
+        <!-- 2 columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <!-- LEFT: Artha + International stacked -->
+          <div class="lg:col-span-9 space-y-12">
+            <!-- INTERNATIONAL -->
+            <div class="space-y-8">
+              <!-- header row -->
+              <div class="section-header">
+                <div class="section-header__left">
+                  <span class="section-header__icon">
+                    <i class="fa-solid fa-globe"></i>
+                  </span>
+                  <h2 class="title">अन्तर्राष्ट्रिय</h2>
+                </div>
+
+                <div class="section-header__line"></div>
+
+                <a
+                  href="#"
+                  class="section-header__more"
+                  aria-label="View more International"
+                >
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </a>
+              </div>
+
+              <!-- content -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- card 1 -->
+                <a href="#" class="group block space-y-2">
+                  <div class="img-medium overflow-hidden">
+                    <img
+                      src="./assets/inter-1.jpg"
+                      alt=""
+                      class="w-full h-full img-cover"
+                    />
+                  </div>
+                  <h3 class="news-title-small">
+                    घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                  </h3>
+                </a>
+                <!-- card 2 -->
+                <a href="#" class="group block space-y-2">
+                  <div class="img-medium overflow-hidden">
+                    <img
+                      src="./assets/inter-2.jpg"
+                      alt=""
+                      class="w-ful h-full img-cover"
+                    />
+                  </div>
+                  <h3 class="news-title-small">
+                    घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै
+                  </h3>
+                </a>
+                <!-- card 3 -->
+                <a href="#" class="group block space-y-2">
+                  <div class="img-medium overflow-hidden">
+                    <img
+                      src="./assets/inter-1.jpg"
+                      alt=""
+                      class="w-full h-full img-cover"
+                    />
+                  </div>
+                  <h3 class="news-title-small">
+                    घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                  </h3>
+                </a>
+                <!-- card 4 -->
+                <a href="#" class="group block space-y-2">
+                  <div class="img-medium overflow-hidden">
+                    <img
+                      src="./assets/inter-2.jpg"
+                      alt=""
+                      class="w-full h-full img-cover"
+                    />
+                  </div>
+                  <h3 class="news-title-small">
+                    ज्यान गुमाउँदै महिला र बालबालिका
+                  </h3>
+                </a>
+                <!-- card 5 -->
+                <a href="#" class="group block space-y-2">
+                  <div class="img-medium overflow-hidden">
+                    <img
+                      src="./assets/inter-1.jpg"
+                      alt=""
+                      class="w-full h-full img-cover"
+                    />
+                  </div>
+                  <h3 class="news-title-small">उपचार गर्नुपर्ने भारत</h3>
+                </a>
+                <!-- card 6 -->
+                <a href="#" class="group block space-y-2">
+                  <div class="img-medium overflow-hidden">
+                    <img
+                      src="./assets/inter-2.jpg"
+                      alt=""
+                      class="w-full h-full img-cover"
+                    />
+                  </div>
+                  <h3 class="news-title-small">
+                    उपचार गर्नुपर्ने भारत महिला र बालबालिका
+                  </h3>
+                </a>
+              </div>
+            </div>
+            <!-- प्रवास गतिविधि -->
+            <div class="space-y-8">
+              <!-- header row -->
+              <div class="section-header">
+                <div class="section-header__left">
+                  <span class="section-header__icon">
+                    <i class="fa-solid fa-route"></i>
+                  </span>
+                  <h2 class="title">प्रवास गतिविधि</h2>
+                </div>
+
+                <div class="section-header__line"></div>
+
+                <a href="#" class="section-header__more">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </a>
+              </div>
+
+              <!-- content -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                <!-- left big -->
+                <div>
+                  <a href="#" class="group relative block overflow-hidden">
+                    <div class="aspect-[3/4] overflow-hidden">
+                      <img
+                        src="./assets/inter-1.jpg"
+                        alt=""
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                      />
+                    </div>
+
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+                    ></div>
+
+                    <h3
+                      class="absolute bottom-4 left-4 right-4 news-title-big text-white z-10"
+                    >
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+                </div>
+
+                <!-- right -->
+                <div class="space-y-4">
+                  <!-- card 1 -->
+                  <a href="#" class="group block space-y-2">
+                    <div class="aspect-[2/1] overflow-hidden">
+                      <img
+                        src="./assets/inter-1.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 class="news-title-medium">
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+
+                  <!-- card 2 -->
+                  <a href="#" class="group block space-y-2">
+                    <div class="aspect-[2/1] overflow-hidden">
+                      <img
+                        src="./assets/inter-2.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 class="news-title-medium">
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  Sticky Latest News at right  -->
+          <aside class="lg:col-span-3">
+            <div class="sticky top-24 space-y-8">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="h-8 w-8 bg-[#BE1E2E] rounded-full grid place-items-center"
+                  >
+                    <i class="fa-solid fa-clock text-white"></i>
+                  </span>
+                  <h2 class="title">ताजा समाचार</h2>
+                </div>
+              </div>
+
+              <!-- title-only list -->
+              <div class="bg-white">
+                <ul class="latest-news">
+                  <li class="latest-item">
+                    <a href="#" class="latest-link">
+                      <span class="latest-dot"></span>
+
+                      <p class="news-title-smallest">
+                        रुपैयाँमा एक लाख ७५ हजार किलो लसुन र प्याज उत्पादन गर्ने
+                        लक्ष्य
+                      </p>
+
+                      <div class="latest-meta">
+                        <i class="fa-regular fa-clock text-[#9ca3af]"></i>
+                        <span class="latest-time">२ घण्टा अगाडि</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="latest-item">
+                    <a href="#" class="latest-link">
+                      <span class="latest-dot"></span>
+                      <p class="news-title-smallest">
+                        चित्र बनाउँदै ललितकलाका विद्यार्थी
+                      </p>
+                      <div class="latest-meta">
+                        <i class="fa-regular fa-clock text-[#9ca3af]"></i>
+                        <span class="latest-time">२ घण्टा अगाडि</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="latest-item">
+                    <a href="#" class="latest-link">
+                      <span class="latest-dot"></span>
+                      <p class="news-title-smallest">
+                        आर्थिक उपार्जनको माध्यम बन्दै कफीखेती
+                      </p>
+                      <div class="latest-meta">
+                        <i class="fa-regular fa-clock text-[#9ca3af]"></i>
+                        <span class="latest-time">२ घण्टा अगाडि</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="latest-item">
+                    <a href="#" class="latest-link">
+                      <span class="latest-dot"></span>
+                      <p class="news-title-smallest">
+                        अमेरिकी प्रतिबन्ध उल्लङ्घनको आरोपमा भेनेजुएलातर्फ
+                        गइरहेको...
+                      </p>
+                      <div class="latest-meta">
+                        <i class="fa-regular fa-clock text-[#9ca3af]"></i>
+                        <span class="latest-time">२ घण्टा अगाडि</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="latest-item">
+                    <a href="#" class="latest-link">
+                      <span class="latest-dot"></span>
+                      <p class="news-title-smallest">
+                        अमेरिकी प्रतिबन्ध उल्लङ्घनको आरोपमा भेनेजुएलातर्फ
+                        गइरहेको...
+                      </p>
+                      <div class="latest-meta">
+                        <i class="fa-regular fa-clock text-[#9ca3af]"></i>
+                        <span class="latest-time">२ घण्टा अगाडि</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- कला and साहित्य -->
+    <section class="py-8 bg-[#f5f5f5]">
+      <div class="max-w-7xl mx-auto px-6 md:px-0 space-y-8">
+        <!-- header row -->
+        <div class="section-header">
+          <div class="section-header__left">
+            <span class="section-header__icon">
+              <i class="fa-solid fa-gears"></i>
+            </span>
+            <h2 class="title">कला र साहित्य</h2>
+          </div>
+
+          <div class="section-header__line"></div>
+
+          <a href="#" class="section-header__more">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </a>
+        </div>
+
+        <!-- content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <!-- left 4 news cards -->
+          <div class="lg:col-span-8 h-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- card -->
+              <a href="#" class="block overflow-hidden space-y-2">
+                <div class="img-medium overflow-hidden">
+                  <img
+                    src="./assets/artha-2.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <h3 class="news-title-medium">
+                  घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                </h3>
+              </a>
+
+              <a href="#" class="block overflow-hidden space-y-2">
+                <div class="img-medium overflow-hidden">
+                  <img
+                    src="./assets/artha-1.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <h3 class="news-title-medium">
+                  घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                </h3>
+              </a>
+
+              <a href="#" class="block overflow-hidden space-y-2">
+                <div class="img-medium overflow-hidden">
+                  <img
+                    src="./assets/artha-3.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <h3 class="news-title-medium">
+                  घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                </h3>
+              </a>
+
+              <a href="#" class="block overflow-hidden space-y-2">
+                <div class="img-medium overflow-hidden">
+                  <img
+                    src="./assets/img-3.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <h3 class="news-title-medium">
+                  घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                </h3>
+              </a>
+            </div>
+          </div>
+
+          <!-- right video card -->
+          <div class="lg:col-span-4 h-full">
+            <button
+              type="button"
+              class="group relative overflow-hidden text-left h-full w-full"
+              data-embed="https://www.youtube.com/embed/mIohaInytiw"
+            >
+              <!--  wrapper fills  -->
+              <div class="absolute inset-0">
+                <iframe
+                  src="https://www.youtube.com/embed/mIohaInytiw?controls=0&mute=1&playsinline=1"
+                  class="w-full h-full pointer-events-none"
+                  frameborder="0"
+                  allow="encrypted-media"
+                  aria-hidden="true"
+                ></iframe>
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent"
+              ></div>
+
+              <span
+                class="absolute inset-0 grid place-items-center"
+                aria-hidden="true"
+              >
+                <span
+                  class="h-12 w-12 rounded-full bg-[#c62828] grid place-items-center shadow-lg"
+                >
+                  <i class="fa-solid fa-play text-white text-xl"></i>
+                </span>
+              </span>
+
+              <h3
+                class="absolute bottom-4 left-4 right-4 text-white news-title-big z-10"
+              >
+                भिडियो: बजारको ताजा स्थिति
+              </h3>
+            </button>
+          </div>
+        </div>
+
+        <!-- VIDEO MODAL -->
+        <div
+          id="videoModal"
+          class="fixed inset-0 z-[9999] hidden items-center justify-center p-4"
+          aria-hidden="true"
+        >
+          <!-- backdrop -->
+          <div id="videoBackdrop" class="absolute inset-0 bg-black/80"></div>
+
+          <!-- modal box -->
+          <div
+            class="relative z-10 w-full max-w-4xl bg-black overflow-hidden shadow-2xl"
+          >
+            <button
+              id="videoClose"
+              type="button"
+              class="absolute right-3 top-3 z-20 h-10 w-10 rounded-full bg-white/15 hover:bg-white/25 text-white grid place-items-center"
+              aria-label="Close"
+            >
+              ✕
+            </button>
+
+            <div class="aspect-video w-full">
+              <!-- iframe will be injected here -->
+              <div id="videoFrame" class="w-full h-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resusable/random section -->
+    <section class="py-8 bg-[#111940]">
+      <div class="max-w-7xl mx-auto px-6 md:px-0 space-y-8">
+        <!-- header row -->
+        <div class="flex items-center">
+          <div class="section-header__left-blue">
+            <span class="section-header__icon-blue">
+              <i class="fa-solid fa-newspaper"></i>
+            </span>
+            <h2 class="title text-[#111940]">समाचार</h2>
+          </div>
+
+          <div class="section-header__line-blue"></div>
+
+          <a href="#" class="section-header__more-blue">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </a>
+        </div>
+
+        <!-- content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <!-- LEFT featured  -->
+          <div class="lg:col-span-8">
+            <div class="space-y-8">
+              <!-- Featured card -->
+              <a
+                href="#"
+                class="group grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch"
+              >
+                <div class="md:col-span-5">
+                  <div class="img-medium overflow-hidden h-full">
+                    <img
+                      src="./assets/rajniti-1.jpg"
+                      alt=""
+                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+                    />
+                  </div>
+                </div>
+
+                <div class="md:col-span-7 flex flex-col">
+                  <div class="space-y-2">
+                    <h3 class="news-title-medium-white">
+                      संसदमा आज महत्त्वपूर्ण निर्णय, सरकार–विपक्षबीच तर्कवितर्क
+                    </h3>
+
+                    <p class="news-detail text-white/70">
+                      संसद बैठकमा आज नीति तथा कार्यक्रमबारे छलफल हुने भएको छ।
+                      दलहरूबीच सहमति खोज्ने प्रयास जारी छ।
+                    </p>
+                  </div>
+
+                  <div
+                    class="mt-auto pt-4 flex items-center gap-2 text-sm text-white/60"
+                  >
+                    <span class="flex items-center gap-1">
+                      <i class="fa-regular fa-clock"></i>
+                      २ घण्टा अघि
+                    </span>
+                    <span class="w-1 h-1 bg-white/40 rounded-full"></span>
+                    <span>२०८२ जेठ २७</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Featured card 2 -->
+              <a
+                href="#"
+                class="group grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch"
+              >
+                <div class="md:col-span-5">
+                  <div class="img-medium overflow-hidden h-full">
+                    <img
+                      src="./assets/rajniti-2.jpg"
+                      alt=""
+                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+                    />
+                  </div>
+                </div>
+
+                <div class="md:col-span-7 flex flex-col">
+                  <div class="space-y-2">
+                    <h3 class="news-title-medium-white">
+                      संसदमा आज महत्त्वपूर्ण निर्णय, सरकार–विपक्षबीच तर्कवितर्क
+                    </h3>
+
+                    <p class="news-detail text-white/70">
+                      संसद बैठकमा आज नीति तथा कार्यक्रमबारे छलफल हुने भएको छ।
+                      दलहरूबीच सहमति खोज्ने प्रयास जारी छ।
+                    </p>
+                  </div>
+
+                  <div
+                    class="mt-auto pt-4 flex items-center gap-2 text-sm text-white/60"
+                  >
+                    <span class="flex items-center gap-1">
+                      <i class="fa-regular fa-clock"></i>
+                      २ घण्टा अघि
+                    </span>
+                    <span class="w-1 h-1 bg-white/40 rounded-full"></span>
+                    <span>२०८२ जेठ २७</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT list  -->
+          <div class="lg:col-span-4">
+            <!-- item -->
+            <div class="space-y-8">
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-2.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest text-white">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित जुटेन, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-1.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest text-white">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-2.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest text-white">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित जुटेन, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+              <a href="#" class="group flex gap-4">
+                <img
+                  src="./assets/rajniti-1.jpg"
+                  alt=""
+                  class="h-20 w-28 object-cover shrink-0"
+                />
+                <div class="space-y-2">
+                  <h4 class="news-title-smallest text-white">
+                    दलहरूबीच सहमति जुटेन, बैठक स्थगित
+                  </h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sports  -->
+    <section class="py-8">
+      <div class="max-w-7xl mx-auto px-6 md:px-0 space-y-8">
+        <!-- header row -->
+        <div class="section-header">
+          <div class="section-header__left">
+            <span class="section-header__icon">
+              <i class="fa-solid fa-football"></i>
+            </span>
+            <h2 class="title">खेलकुद</h2>
+          </div>
+
+          <div class="section-header__line"></div>
+
+          <a href="#" class="section-header__more">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </a>
+        </div>
+
+        <!-- content -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- card 1 -->
+          <div>
+            <a href="#" class="group block relative overflow-hidden">
+              <div class="aspect-[3/4] overflow-hidden">
+                <img
+                  src="./assets/img1.jpeg"
+                  alt=""
+                  class="w-full h-full img-cover"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <h3
+                class="absolute bottom-4 left-4 right-4 news-title-big text-white z-10"
+              >
+                घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+              </h3>
+            </a>
+          </div>
+          <!-- card-2 -->
+          <div>
+            <a href="#" class="group block relative overflow-hidden">
+              <div class="aspect-[3/4] overflow-hidden">
+                <img
+                  src="./assets/inter-2.jpg"
+                  alt=""
+                  class="w-full h-full img-cover"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <h3
+                class="absolute bottom-4 left-4 right-4 news-title-big text-white z-10"
+              >
+                घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+              </h3>
+            </a>
+          </div>
+          <!-- card 3 -->
+          <div>
+            <a href="#" class="group block relative overflow-hidden">
+              <div class="aspect-[3/4] overflow-hidden">
+                <img
+                  src="./assets/img1.jpeg"
+                  alt=""
+                  class="w-full h-full img-cover"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+              ></div>
+
+              <h3
+                class="absolute bottom-4 left-4 right-4 news-title-big text-white z-10"
+              >
+                घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--nepali bishes, japanes bishes, sticky latest -->
+    <section class="py-8">
+      <div class="max-w-7xl mx-auto px-6 md:px-0">
+        <!-- 2 columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <!-- nepal and japan bishes -->
+          <div class="lg:col-span-9 space-y-12">
+            <!-- नेपाली बिशेस  -->
+            <div class="space-y-8">
+              <!-- header row -->
+              <div class="section-header">
+                <div class="section-header__left">
+                  <span class="section-header__icon">
+                    <img src="./assets/nepal-icon.png" alt="" />
+                  </span>
+                  <h2 class="title">नेपाली बिशेस</h2>
+                </div>
+                <div class="section-header__line"></div>
+                <a
+                  href="#"
+                  class="section-header__more"
+                  aria-label="View more Artha"
+                >
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </a>
+              </div>
+
+              <!-- content -->
+              <div class="space-y-8">
+                <!-- TOP featured -->
+                <a
+                  href="#"
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch"
+                >
+                  <!-- image -->
+                  <div class="img-big overflow-hidden">
+                    <img
+                      src="./assets/artha-1.jpg"
+                      alt=""
+                      class="w-full h-full img-cover transition-transform duration-300 hover:scale-[1.03]"
+                    />
+                  </div>
+
+                  <!-- text -->
+                  <div class="flex flex-col items-start">
+                    <div class="space-y-2">
+                      <h3 class="news-title-big">
+                        संसदमा आज महत्त्वपूर्ण निर्णय, सरकार–विपक्षबीच
+                        तर्कवितर्क
+                      </h3>
+
+                      <p class="news-detail">
+                        संसद बैठकमा आज नीति तथा कार्यक्रमबारे विस्तृत छलफल
+                        हुँदैछ। दलहरूबीच सहमति जुटाउने प्रयास भइरहेकाले राजनीतिक
+                        गतिविधि थप सक्रिय बनेको छ।
+                      </p>
+                    </div>
+                    <div
+                      class="mt-auto pt-4 flex items-center gap-2 text-sm text-black/60"
+                    >
+                      <span class="flex items-center gap-1">
+                        <i class="fa-regular fa-clock"></i>
+                        २ घण्टा अघि
+                      </span>
+                      <span class="w-1 h-1 bg-black/40 rounded-full"></span>
+                      <span>२०८२ जेठ २७</span>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- 3 items row -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <!-- card 1 -->
+                  <a href="#" class="flex items-stretch gap-4">
+                    <img
+                      src="./assets/artha-2.jpg"
+                      alt=""
+                      class="h-28 w-32 object-cover shrink-0"
+                    />
+                    <h4 class="news-title-small">
+                      दलहरूबीच सहमति जुटेन, बैठक स्थगित सहमति जुटेन, बैठक सहमति
+                      जुटेन, बैठक
+                    </h4>
+                  </a>
+
+                  <!-- card 2 -->
+                  <a href="#" class="flex items-stretch gap-3">
+                    <img
+                      src="./assets/artha-3.jpg"
+                      alt=""
+                      class="h-28 w-32 object-cover shrink-0"
+                    />
+                    <h4 class="news-title-small">
+                      दलहरूबीच सहमति जुटेन, बैठक स्थगित सहमति जुटेन, बैठक
+                    </h4>
+                  </a>
+
+                  <!-- card 3 -->
+                  <a href="#" class="flex items-stretch gap-3">
+                    <img
+                      src="./assets/artha-2.jpg"
+                      alt=""
+                      class="h-28 w-32 object-cover shrink-0"
+                    />
+                    <h4 class="news-title-small">
+                      दलहरूबीच सहमति जुटेन, बैठक स्थगित सहमति जुटेन, बैठक सहमति
+                      जुटेन, बैठक
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- जापानी बिशेस -->
+            <div class="space-y-8">
+              <!-- header row -->
+              <div class="section-header">
+                <div class="section-header__left">
+                  <span class="section-header__icon">
+                    <i class="fa-solid fa-yen-sign"></i>
+                  </span>
+                  <h2 class="title">जापान बिशेस</h2>
+                </div>
+
+                <div class="section-header__line"></div>
+
+                <a
+                  href="#"
+                  class="section-header__more"
+                  aria-label="View more International"
+                >
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </a>
+              </div>
+
+              <!-- content -->
+              <div class="flex flex-col gap-4">
+                <!-- up -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <a href="#" class="group relative block overflow-hidden">
+                    <div class="img-medium overflow-hidden">
+                      <img
+                        src="./assets/artha-2.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+                    ></div>
+
+                    <h3
+                      class="absolute bottom-4 left-4 right-4 text-white news-title-medium z-10"
+                    >
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+
+                  <a href="#" class="group relative block overflow-hidden">
+                    <div class="img-medium overflow-hidden">
+                      <img
+                        src="./assets/artha-1.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+                    ></div>
+
+                    <h3
+                      class="absolute bottom-4 left-4 right-4 text-white news-title-medium z-10"
+                    >
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+                </div>
+                <!-- down -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <!-- card 1 -->
+                  <a href="#" class="group block overflow-hidden space-y-2">
+                    <div class="img-medium overflow-hidden">
+                      <img
+                        src="./assets/artha-2.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <h3 class="news-title-small">
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+                  <!-- card 2 -->
+                  <a href="#" class="group block overflow-hidden space-y-2">
+                    <div class="img-medium overflow-hidden">
+                      <img
+                        src="./assets/artha-1.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <h3 class="news-title-small">
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+                  <!-- card 3 -->
+                  <a href="#" class="group block overflow-hidden space-y-2">
+                    <div class="img-medium overflow-hidden">
+                      <img
+                        src="./assets/inter-1.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <h3 class="news-title-small">
+                      घरायसी प्रदूषणले अकालमा ज्यान गुमाउँदै महिला र बालबालिका
+                    </h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sticky Trending News  -->
+          <aside class="lg:col-span-3">
+            <div class="sticky top-24 space-y-8">
+              <!-- Header -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="h-8 w-8 bg-[#BE1E2E] rounded-full grid place-items-center"
+                  >
+                    <i class="fa-solid fa-arrow-trend-up text-white"></i>
+                  </span>
+                  <h2 class="title">ट्रेन्डिङ समाचार</h2>
+                </div>
+              </div>
+
+              <!-- title-only list -->
+              <div class="bg-white border border-[#e9e9e9]">
+                <ul class="divide-y divide-[#e9e9e9]">
+                  <!-- item -->
+                  <li>
+                    <a
+                      href="#"
+                      class="flex gap-4 px-4 py-2 hover:bg-gray-50 transition"
+                    >
+                      <span
+                        class="shrink-0 h-10 w-10 rounded-full bg-[#c62828] text-white grid place-items-center font-bold text-xl"
+                      >
+                        १
+                      </span>
+
+                      <p class="news-title-smallest">
+                        पिकनिकबाट फर्किँदै गरेको बस दुर्घटना हुँदा मृत्यु हुनेको
+                      </p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="flex gap-4 px-4 py-2 hover:bg-gray-50 transition"
+                    >
+                      <span
+                        class="shrink-0 h-10 w-10 rounded-full bg-[#c62828] text-white grid place-items-center font-bold text-xl"
+                      >
+                        २
+                      </span>
+                      <p class="news-title-smallest">
+                        तपाईंको आजको राशिफल कस्तो छ?
+                      </p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="flex gap-4 px-4 py-2 hover:bg-gray-50 transition"
+                    >
+                      <span
+                        class="shrink-0 h-10 w-10 rounded-full bg-[#c62828] text-white grid place-items-center font-bold text-xl"
+                      >
+                        ३
+                      </span>
+                      <p class="news-title-smallest">
+                        देउवाले यसरी फुटाएका थिए कांग्रेस
+                      </p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="flex gap-4 px-4 py-2 hover:bg-gray-50 transition"
+                    >
+                      <span
+                        class="shrink-0 h-10 w-10 rounded-full bg-[#c62828] text-white grid place-items-center font-bold text-xl"
+                      >
+                        ४
+                      </span>
+                      <p class="news-title-smallest">
+                        दाँत माझ्दा घाँटीको नसा फुटेपछि...
+                      </p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="flex gap-4 px-4 py-2 hover:bg-gray-50 transition"
+                    >
+                      <span
+                        class="shrink-0 h-10 w-10 rounded-full bg-[#c62828] text-white grid place-items-center font-bold text-xl"
+                      >
+                        ५
+                      </span>
+                      <p class="news-title-smallest">
+                        राष्ट्रिय सभामा कांग्रेस–एमाले वर्षसक्केको अर्थ
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0b1a4a] text-white mt-12">
+      <div class="max-w-7xl mx-auto px-6 md:px-0 pt-10 pb-6">
+        <!-- TOP MAIN FOOTER -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <!-- ABOUT -->
+          <div class="lg:col-span-5 space-y-8">
+            <h3 class="text-4xl font-medium">हाम्रो बारेमा</h3>
+
+            <p class="text-xl leading-relaxed text-white/70 max-w-xl">
+              Kyodai News is the best online news portal of Nepal and Japan.
+              Find online breaking news, updates, and trusted stories every day.
+            </p>
+          </div>
+
+          <!-- USEFUL LINKS -->
+          <div class="lg:col-span-4 space-y-8">
+            <h3 class="text-4xl font-medium">उपयोगी लिंकहरु</h3>
+
+            <div
+              class="grid grid-cols-2 gap-y-4 gap-x-10 text-lg text-white/70"
+            >
+              <a href="#" class="hover:text-white transition">राजनीति</a>
+              <a href="#" class="hover:text-white transition">अर्थ</a>
+              <a href="#" class="hover:text-white transition"
+                >अन्तर्राष्ट्रिय</a
+              >
+
+              <a href="#" class="hover:text-white transition"> खेलकुद</a>
+              <a href="#" class="hover:text-white transition"> नेपाल विशेष</a>
+
+              <a href="#" class="hover:text-white transition"> जापान विशेष</a>
+
+              <a href="#" class="hover:text-white transition">
+                प्रवास गतिविधि</a
+              >
+              <a href="#" class="hover:text-white transition"> कला / साहित्य</a>
+            </div>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="lg:col-span-3 space-y-8">
+            <h3 class="text-4xl font-medium">सम्पर्क</h3>
+
+            <div class="space-y-6 text-lg text-white/90">
+              <div class="flex items-center gap-4">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="font-normal text-white/70">Kathmandu, Nepal</span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <i class="fa-solid fa-phone"></i>
+                <span class="font-normal text-white/70">+977 01-4102676</span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="font-normal text-white/70"
+                  >info@kyodainews.com</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="mt-10 border-t border-white/30"></div>
+
+        <!-- MIDDLE BAR -->
+        <div class="py-4 grid grid-cols-1 lg:grid-cols-2 items-center">
+          <!-- LEFT: BRAND -->
+          <div class="flex items-center gap-4">
+            <img
+              src="./assets/nobg-logo-white.png"
+              alt="Kyodai News"
+              class="h-16 w-auto"
+            />
+
+            <div class="leading-tight">
+              <p class="text-lg font-semibold">Kyodai News</p>
+              <p class="text-sm text-white/70">
+                Nepal & Japan को विश्वसनीय समाचार
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT: SOCIALS -->
+          <div
+            class="flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end justify-between"
+          >
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="h-10 w-10 rounded-full bg-white/10 border border-white/10 grid place-items-center hover:bg-white/20 hover:border-white/20 transition"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="h-10 w-10 rounded-full bg-white/10 border border-white/10 grid place-items-center hover:bg-white/20 hover:border-white/20 transition"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="h-10 w-10 rounded-full bg-white/10 border border-white/10 grid place-items-center hover:bg-white/20 hover:border-white/20 transition"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="h-10 w-10 rounded-full bg-white/10 border border-white/10 grid place-items-center hover:bg-white/20 hover:border-white/20 transition"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border-t border-white/30"></div>
+
+        <!-- BOTTOM BAR -->
+        <div
+          class="pt-5 flex flex-col md:flex-row items-start md:items-center justify-between text-base"
+        >
+          <p>© 2026 Kyodai News. सर्वाधिकार सुरक्षित</p>
+
+          <div class="flex items-center gap-4 text-white/70">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition"
+              >Terms & Condition</a
+            >
+          </div>
+
+          <div class="flex items-center gap-4 text-white">
+            <span>Developed by</span>
+            <a
+              href="https://kantipurinfotech.com"
+              target="_blank"
+              class="hover:text-white transition"
+            >
+              <img
+                src="./assets/kitlogo.png"
+                alt="Kantipur Infotech"
+                class="h-7 w-auto"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
