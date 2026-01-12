@@ -52,9 +52,9 @@ body {
 
 .title {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 400;
   transition: color 220ms ease-in-out;
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
 }
 
 .banner-title {
@@ -70,49 +70,64 @@ body {
 .news-title-big {
   font-size: 30px;
   font-weight: 500;
-  line-height: 42px;
+  line-height: 34px;
+}
+.news-title-big-white {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 34px;
 }
 .news-title-medium {
   font-size: 24px;
   font-weight: 500;
-  line-height: 34px;
+  line-height: 28px;
 }
 
 .news-title-medium-white {
   color: white;
   font-size: 24px;
   font-weight: 500;
-  line-height: 34px;
+  line-height: 28px;
 }
 
 .news-title-small {
   font-size: 20px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 24px;
 }
 .news-title-smallest {
   font-size: 18px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 24px;
 }
 
 .news-detail {
   color: var(--pagagraph);
-  font-size: 16px;
-  line-height: 31px;
+  font-size: 18px;
+  line-height: 23px;
   font-weight: 400;
   letter-spacing: 0.7px;
 }
 
 .img-big {
   aspect-ratio: 4 / 3;
+  border-radius: 4px;
 }
 .img-medium {
   aspect-ratio: 3 / 2;
+  border-radius: 4px;
 }
+
+.img-small {
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+}
+
 .img-smallest {
-  height: 80px;
-  width: 112px;
+  height: 110px;
+  width: 160px;
+  border-radius: 4px;
 }
 
 .img-category {
@@ -357,7 +372,7 @@ i {
 
 /* LEFT */
 .section-header__left {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 12px;
   background: #be1e2e;
@@ -383,9 +398,11 @@ i {
 }
 
 .section-header__title {
-  font-size: 22px;
-  font-weight: 700;
-  margin: 0;
+  font-family: "Anek Devanagari", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  transition: color 220ms ease-in-out;
+  letter-spacing: 0.3px;
 }
 
 /* LINE */
@@ -570,4 +587,293 @@ i {
   align-items: center;
   justify-content: center;
   transition: color 0.25s ease, transform 0.3s ease;
+}
+
+/* ----- live update css part  ----- */
+.kyodai-live-hero {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* at the right end */
+.kyodai-live-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: calc(100% - 40px);
+  width: min(420px, 88%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 14px 14px 12px;
+  border-radius: 4px;
+}
+
+/* header */
+.kyodai-live-panel__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* Live update badge with icon inside */
+.kyodai-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #c62828;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.kyodai-live-badge i {
+  font-size: 20px;
+}
+.kyodai-live-panel__hint {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* scrollable list*/
+.kyodai-live-list {
+  margin-top: 12px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* scrollbar */
+.kyodai-live-list::-webkit-scrollbar {
+  width: 4px;
+}
+.kyodai-live-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 99px;
+}
+.kyodai-live-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+}
+
+/* items/content */
+.kyodai-live-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 12px 8px 12px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.kyodai-live-item:last-child {
+  border-bottom: 0;
+}
+
+.kyodai-live-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(255, 255, 255);
+}
+
+.kyodai-live-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.kyodai-live-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.kyodai-live-meta i {
+  font-size: 14px;
+}
+
+/* mobile view: panel becomes bottom sheet */
+@media (max-width: 768px) {
+  .kyodai-live-panel {
+    width: 100%;
+    height: 55%;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* -----live update second layoout -----  */
+.kyodai-live {
+  padding: 28px 0;
+}
+
+.kyodai-live-row {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 0;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* big image area */
+.kyodai-live-row__media {
+  display: block;
+  position: relative;
+  height: 600px;
+}
+
+.kyodai-live-row__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+/* soft gradient so overlay reads well */
+.kyodai-live-row__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.06) 50%,
+    rgba(0, 0, 0, 0) 75%
+  );
+  pointer-events: none;
+}
+
+/* overlay card panel  */
+.kyodai-live-row__panel {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(70%);
+  width: min(520px, 60%);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+  padding: 18px 18px 12px;
+  z-index: 5;
+}
+
+/* header */
+.kyodai-live-row__panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.kyodai-live-row__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #c62828;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+
+.kyodai-live-row__badge i {
+  font-size: 20px;
+}
+
+/* list scrolling area */
+.kyodai-live-row__list {
+  max-height: 320px;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+/* clean scrollbar */
+.kyodai-live-row__list::-webkit-scrollbar {
+  width: 4px;
+}
+.kyodai-live-row__list::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 99px;
+}
+.kyodai-live-row__list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 99px;
+}
+
+/* item styles */
+.kyodai-live-row__item {
+  padding: 14px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.kyodai-live-row__item:last-child {
+  border-bottom: none;
+}
+
+.kyodai-live-row__itemTitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.kyodai-live-row__itemSub {
+  margin: 8px 0 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.kyodai-live-row__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.kyodai-live-row__meta i {
+  font-size: 14px;
+}
+
+/*  Responsive behavior:*/
+@media (max-width: 900px) {
+  .kyodai-live-row__media {
+    height: 320px;
+  }
+
+  .kyodai-live-row__panel {
+    position: static;
+    transform: none;
+    width: auto;
+    margin: 14px;
+    background: #fff;
+    backdrop-filter: none;
+  }
+
+  .kyodai-live-row__list {
+    max-height: 260px;
+  }
 }
